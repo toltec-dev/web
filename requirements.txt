@@ -1,1 +1,5 @@
 docutils==0.17
+Genshi==0.7.5
+Pygments==2.8.1
+rst2html5==1.10.6
+six==1.15.0
