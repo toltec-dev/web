@@ -27,7 +27,7 @@ $(BUILD)/%.rst: $(SRC)/%.rst
 	cp "$^" "$@"
 
 $(BUILD)/%.html: $(BUILD)/%.rst $(BUILD)/defs.rst
-	rst2html5 --input-encoding utf-8 --output-encoding utf-8 "$<" "$@"
+	rst2html5.py "$<" "$@"
 
 $(BUILD)/%.png: $(SRC)/%.png
 	cp "$^" "$@"
