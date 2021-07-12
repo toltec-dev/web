@@ -16,6 +16,8 @@ A community-maintained repository of free software for the reMarkable tablet.
 Install Toltec
 ==============
 
+*Warning*: Toltec stable doesn't currently support OS 2.6 or newer.
+
 To install Toltec, paste the following lines in `a SSH session
 <https://remarkablewiki.com/tech/ssh>`_ on your reMarkable.
 This will install the Toltec package repository and related tools.
