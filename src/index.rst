@@ -92,3 +92,10 @@ Frequently Asked Questions
 * I found a vulnerability in Toltec or one of its packages, where can I report it?
 
   To inform the Toltec maintainers about a security issue, please follow the `security instructions <https://github.com/toltec-dev/organization/blob/main/docs/security.md>`_.
+  
+* My reMarkable seems to have become unresponsive, how do I fix it?
+
+  If you can't SSH in through USB, there are tools that can help you recovery your remarkable if it becomes unresponsive:
+
+  * reMarkable 1: `uuuflash <https://github.com/ddvk/remarkable-uuuflash>`_
+  * reMarkable 2: `remarkable2-recovery <https://github.com/ddvk/remarkable2-recovery>`_.
