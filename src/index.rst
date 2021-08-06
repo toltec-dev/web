@@ -95,7 +95,7 @@ Frequently Asked Questions
   
 * My reMarkable seems to have become unresponsive, how do I fix it?
 
-  If you can't SSH in through USB, there are tools that can help you recovery your remarkable if it becomes unresponsive:
+  If you can't SSH in through USB (using IP ``10.11.99.1``), there are tools that can help you recover your remarkable if it becomes unresponsive:
 
   * reMarkable 1: `uuuflash <https://github.com/ddvk/remarkable-uuuflash>`_
   * reMarkable 2: `remarkable2-recovery <https://github.com/ddvk/remarkable2-recovery>`_.
