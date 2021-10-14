@@ -16,19 +16,18 @@ A community-maintained repository of free software for the reMarkable tablet.
 Install Toltec
 ==============
 
-To install Toltec, paste the following lines in `a SSH session <https://remarkablewiki.com/tech/ssh>`_ on your reMarkable.
-This will install the Toltec package repository and related tools.
+To install `Toltec <https://github.com/toltec-dev/toltec>`_, connect your reMarkable to Wi-Fi and paste the following lines in an `SSH session <https://remarkablewiki.com/tech/ssh>`_.
 
 .. parsed-literal::
 
-    $ wget \http://toltec-dev.org/bootstrap
-    $ echo "|bootstrap-hash|  bootstrap" | sha256sum -c && bash bootstrap
+    wget \http://toltec-dev.org/bootstrap
+    echo "|bootstrap-hash|  bootstrap" | sha256sum --check && bash bootstrap
 
 
 What Does Toltec Do?
 ====================
 
-Toltec is a repository of unofficial applications for the reMarkable tablet, similar to Homebrew for Mac or Linux.
+Toltec gives you access to all the packages from the `Entware <https://bin.entware.net/armv7sf-k3.2/Packages.html>`_ and Toltec repositories.
 Toltec keeps track of which apps you have installed and makes it easy to update or remove them.
 
 .. container:: columns
@@ -41,11 +40,11 @@ Toltec keeps track of which apps you have installed and makes it easy to update 
 
         ::
 
-            $ opkg update
-            $ opkg upgrade
-            $ opkg install <package>
-            $ opkg remove <package>
-            $ opkg info <package>
+            opkg update
+            opkg upgrade
+            opkg install <package>
+            opkg remove <package>
+            opkg info <package>
 
     .. container::
 
@@ -57,6 +56,21 @@ Toltec keeps track of which apps you have installed and makes it easy to update 
             :width: 100%
             :class: screenshot
 
+    .. container::
+
+        Use the **toltecctl** command to manage your Toltec install.
+
+    .. container::
+
+        ::
+
+            toltecctl help
+            toltecctl reenable
+            toltecctl uninstall
+            toltecctl switch-branch testing
+
+To seamlessly switch between apps, start by installing a `launcher <https://toltec-dev.org/stable#section-launchers>`_
+
 .. class:: center
 
     .. raw:: html
@@ -67,22 +81,22 @@ Toltec keeps track of which apps you have installed and makes it easy to update 
 Frequently Asked Questions
 ==========================
 
-* Do you support reMarkable 2?
+* Where can I get help?
 
-  Yes, but you need to install the **rm2fb** package if you want to use any applications that interact with the display.
+  If you need help with Toltec or one of its packages, feel free to join the `reMarkable community on Discord <https://discord.gg/ATqQGfu>`_.
+  Please do not open issues on GitHub to ask for help, as they're used exclusively for feature requests and `bug reports <https://github.com/toltec-dev/toltec/blob/testing/docs/contributing.md#reporting-a-bug>`_.
 
 * Is this supported by reMarkable AS?
 
-  No, it is a community project.
+  No, this is a community project.
 
 * Will this brick my reMarkable?
 
   Probably not, but `standard disclaimers apply <https://github.com/toltec-dev/toltec/blob/stable/LICENSE>`_.
 
-* Where can I get help?
+* Do you support reMarkable 2?
 
-  If you need help with Toltec or one of its packages, feel free to join the `reMarkable community on Discord <https://discord.gg/ATqQGfu>`_.
-  Please do not open issues on GitHub to ask for help, as they’re not the best medium to provide assistance.
+  Yes, Toltec will automatically detect whether you are using a reMarkable 1 or 2, and install the required framebuffer dependencies.
 
 * Can you add `_____` to Toltec?
 
@@ -95,7 +109,7 @@ Frequently Asked Questions
   
 * My reMarkable seems to have become unresponsive, how do I fix it?
 
-  If you can't SSH in through USB (using IP ``10.11.99.1``), there are tools that can help you recover your remarkable if it becomes unresponsive:
+  If you can't SSH in through USB (using IP ``10.11.99.1``), there are tools that can help you recover your reMarkable if it becomes unresponsive:
 
   * reMarkable 1: `uuuflash <https://github.com/ddvk/remarkable-uuuflash>`_
   * reMarkable 2: `remarkable2-recovery <https://github.com/ddvk/remarkable2-recovery>`_.
