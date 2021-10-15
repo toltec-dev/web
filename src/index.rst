@@ -16,7 +16,7 @@ A community-maintained repository of free software for the reMarkable tablet.
 Install Toltec
 ==============
 
-*Warning*: Toltec does not currently support OS 2.10 or newer on the reMarkable 2. You will likely soft-brick your device if you install before support is released. See `remarkable2-recovery<https://github.com/ddvk/remarkable2-recovery>`_ for information on how to recover your device if you have done this.
+*Warning*: Toltec does not currently support OS 2.10 or newer on the reMarkable 2. You will likely soft-brick your device if you install before support is released. See `remarkable2-recovery <https://github.com/ddvk/remarkable2-recovery>`_ for information on how to recover your device if you have done this.
 
 To install Toltec, paste the following lines in `a SSH session <https://remarkablewiki.com/tech/ssh>`_ on your reMarkable.
 This will install the Toltec package repository and related tools.
