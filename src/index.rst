@@ -23,7 +23,7 @@ To install `Toltec <https://github.com/toltec-dev/toltec>`_, connect your reMark
 .. parsed-literal::
 
     wget \http://toltec-dev.org/bootstrap
-    echo "|bootstrap-hash|  bootstrap" | sha256sum --check && bash bootstrap
+    echo "|bootstrap-hash|  bootstrap" | sha256sum -c && bash bootstrap
 
 
 What Does Toltec Do?
