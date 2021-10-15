@@ -106,10 +106,10 @@ Frequently Asked Questions
 
   Yes, Toltec will automatically detect whether you are using a reMarkable 1 or 2, and install the required framebuffer dependencies.
 
-* Can you add `_____` to Toltec?
+* Can I add `_____` to Toltec?
 
   We’re always open to adding new packages to the repository.
-  You’ll find information about how to request a package in our `contributing guide <https://github.com/toltec-dev/toltec/blob/stable/docs/contributing.md>`_.
+  You’ll find information about how to add a package in our `contributing guide <https://github.com/toltec-dev/toltec/blob/stable/docs/contributing.md>`_.
 
 * I found a vulnerability in Toltec or one of its packages, where can I report it?
 
