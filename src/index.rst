@@ -29,7 +29,7 @@ To install `Toltec <https://github.com/toltec-dev/toltec>`_, connect your reMark
 What Does Toltec Do?
 ====================
 
-Toltec gives you access to all the packages from the `Entware <https://bin.entware.net/armv7sf-k3.2/Packages.html>`_ and Toltec repositories.
+Toltec gives you access to all the packages from the Entware and Toltec repositories.
 Toltec keeps track of which apps you have installed and makes it easy to update or remove them.
 
 .. container:: columns
@@ -77,7 +77,13 @@ To seamlessly switch between apps, start by installing a `launcher <https://tolt
 
     .. raw:: html
 
-        <p><a class="button" href="stable">Browse available packages</a></p>
+        <p><a class="button" href="stable">Browse Toltec packages</a></p>
+
+.. class:: center
+
+    .. raw:: html
+
+        <p><a class="button" href="https://bin.entware.net/armv7sf-k3.2/Packages.html">Browse Entware packages</a></p>
 
 
 Frequently Asked Questions
@@ -86,7 +92,7 @@ Frequently Asked Questions
 * Where can I get help?
 
   If you need help with Toltec or one of its packages, feel free to join the `reMarkable community on Discord <https://discord.gg/ATqQGfu>`_.
-  Please do not open issues on GitHub to ask for help, as they're used exclusively for feature requests and `bug reports <https://github.com/toltec-dev/toltec/blob/testing/docs/contributing.md#reporting-a-bug>`_.
+  Please do not open issues on GitHub to ask for help, as they're used exclusively for `package requests <https://github.com/toltec-dev/toltec/blob/testing/docs/contributing.md#requesting-a-package>`_ and `bug reports <https://github.com/toltec-dev/toltec/blob/testing/docs/contributing.md#reporting-a-bug>`_.
 
 * Is this supported by reMarkable AS?
 
