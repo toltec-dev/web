@@ -29,7 +29,7 @@ To install `Toltec <https://github.com/toltec-dev/toltec>`_, connect your reMark
 What Does Toltec Do?
 ====================
 
-Toltec gives you access to all the packages from the Entware and Toltec repositories.
+Toltec gives you access to all the packages from the `Entware <https://entware.net/about.html>`_ and Toltec repositories.
 Toltec keeps track of which apps you have installed and makes it easy to update or remove them.
 
 .. container:: columns
