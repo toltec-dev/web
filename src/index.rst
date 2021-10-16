@@ -18,7 +18,7 @@ Install Toltec
 
 **Warning:** Toltec does not currently support OS 2.10 or newer on the reMarkable 2. You will likely soft-brick your device if you install before support is released. See `remarkable2-recovery <https://github.com/ddvk/remarkable2-recovery>`_ for information on how to recover your device if you have done this.
 
-To install `Toltec <https://github.com/toltec-dev/toltec>`_, connect your reMarkable to Wi-Fi and paste the following lines in an `SSH session <https://remarkablewiki.com/tech/ssh>`_.
+To install `Toltec <https://github.com/toltec-dev/toltec>`_, connect your reMarkable to Wi-Fi and paste the following lines in an `SSH session <https://remarkablewiki.com/tech/ssh>`_:
 
 .. parsed-literal::
 
