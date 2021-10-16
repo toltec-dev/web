@@ -71,7 +71,7 @@ Toltec keeps track of which apps you have installed and makes it easy to update 
             toltecctl uninstall
             toltecctl switch-branch testing
 
-To seamlessly switch between apps, start by installing a `launcher <https://toltec-dev.org/stable#section-launchers>`_
+To seamlessly switch between apps, start by installing a `launcher <https://toltec-dev.org/stable#section-launchers>`_.
 
 .. class:: center
 
