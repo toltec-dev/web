@@ -91,8 +91,8 @@ Frequently Asked Questions
 
 * Where can I get help?
 
-  If you need help with Toltec or one of its packages, feel free to join the `reMarkable community on Discord <https://discord.gg/ATqQGfu>`_.
-  Please do not open issues on GitHub to ask for help, as they're used exclusively for `package requests <https://github.com/toltec-dev/toltec/blob/testing/docs/contributing.md#requesting-a-package>`_ and `bug reports <https://github.com/toltec-dev/toltec/blob/testing/docs/contributing.md#reporting-a-bug>`_.
+  If you need help with Toltec or one of its packages, you can `start a discussion on GitHub <https://github.com/toltec-dev/toltec/discussions>`_ or `join the reMarkable community on Discord <https://discord.gg/ATqQGfu>`_.
+  Please do not open issues to ask for help, as they're used exclusively for `package requests <https://github.com/toltec-dev/toltec/blob/testing/docs/contributing.md#requesting-a-package>`_ and `bug reports <https://github.com/toltec-dev/toltec/blob/testing/docs/contributing.md#reporting-a-bug>`_.
 
 * Is this supported by reMarkable AS?
 
