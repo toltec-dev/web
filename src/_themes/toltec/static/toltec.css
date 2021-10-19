@@ -183,6 +183,11 @@ dd {
     content: url(images/icon-github.svg);
 }
 
+.icon-matrix::before {
+    vertical-align: -18%;
+    content: url(images/icon-matrix.svg);
+}
+
 /* Global page layout */
 
 body {
