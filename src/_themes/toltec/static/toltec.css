@@ -354,11 +354,10 @@ main > section:first-of-type > h1:first-of-type {
 
 /* Large screens */
 
-@media (min-width: 1440px) { :root { --scaling: 1.25; } }
-@media (min-width: 1696px) { :root { --scaling: 1.50; } }
-@media (min-width: 1952px) { :root { --scaling: 1.75; } }
-@media (min-width: 2208px) { :root { --scaling: 2.00; } }
-@media (min-width: 2464px) { :root { --scaling: 2.25; } }
-@media (min-width: 2720px) { :root { --scaling: 2.50; } }
-@media (min-width: 2976px) { :root { --scaling: 2.75; } }
-@media (min-width: 3232px) { :root { --scaling: 3.00; } }
+@media (min-width: 1696px) { :root { --scaling: 1.25; } }
+@media (min-width: 1952px) { :root { --scaling: 1.50; } }
+@media (min-width: 2208px) { :root { --scaling: 1.75; } }
+@media (min-width: 2464px) { :root { --scaling: 2.00; } }
+@media (min-width: 2720px) { :root { --scaling: 2.25; } }
+@media (min-width: 2976px) { :root { --scaling: 2.50; } }
+@media (min-width: 3232px) { :root { --scaling: 2.75; } }
