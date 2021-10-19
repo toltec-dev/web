@@ -7,7 +7,7 @@
     --font: "-apple-system", "BlinkMacSystemFont",
         "Helvetica Neue", "Roboto", sans-serif;
     --font-color: #222;
-    --font-color-dim: #666;
+    --font-color-dim: #777;
     --font-color-inv: #fcfaf8;
 
     /* Text sizes */
@@ -22,7 +22,7 @@
 
     /* Layout sizes */
     --page-width: 1024px;
-    --sidebar-width: 300px;
+    --sidebar-width: 275px;
     --page-spacing: 48px;
     --sidebar-seam: calc(50% - var(--page-width) / 2 + var(--sidebar-width) + 2 * var(--page-spacing));
 
@@ -97,9 +97,8 @@ a:hover {
 }
 
 .headerlink {
-    float: left;
+    float: right;
     color: var(--font-color-dim);
-    margin-left: -24px;
 }
 
 h1 {
