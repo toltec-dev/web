@@ -2,11 +2,11 @@
 Home
 ====
 
-Toltec is a community-maintained repository of free software for the `reMarkable tablet <https://remarkable.com/>`_.
+Toltec is a community-maintained repository of free software for the `reMarkable tablet <https://remarkable.com/>`_.
 
 .. raw:: html
 
-   <img src="_static/images/toltec-large.svg" alt="" class="logo" height="256">
+   <img src="_static/images/toltec-large.svg" alt="" class="logo">
 
 Install Toltec
 ==============
