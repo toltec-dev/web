@@ -20,7 +20,7 @@ jobs:
             - name: Sync website with the remote repository
               uses: ./.github/actions/sync-repository
               with:
-                local-path: build/
+                local-path: dist/
                 ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
                 ssh-known-hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
                 remote-path: ${{ secrets.REMOTE_SSH }}:/srv/toltec/web
