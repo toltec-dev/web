@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {%- if title == "Home" %}
+        <title>{{ docstitle|e }}</title>
+        {%- else %}
+        {%- set titlesuffix = " &#8212; "|safe + docstitle|e %}
+        <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+        {%- endif %}
+
+        <link rel="stylesheet" href="_static/toltec.css">
+        <link rel="icon" href="_static/images/favicon.png" type="image/png">
+        <link rel="icon" href="_static/images/favicon.svg" sizes="any" type="image/svg+xml">
+    </head>
+    <body>
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <a href="/">
+                    <img alt="" src="_static/images/toltec-small.svg"
+                         class="sidebar-logo">
+                    <span class="sidebar-sitename">{{ project }}</span>
+                </a>
+            </header>
+
+            {%- for sidebartemplate in sidebars %}
+            {%- include sidebartemplate %}
+            {%- endfor %}
+        </aside>
+        <main>
+            {% block body %} {% endblock %}
+        </main>
+    </body>
+</html>

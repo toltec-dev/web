@@ -15,16 +15,12 @@ jobs:
               uses: actions/setup-python@v2
               with:
                 python-version: '3.8'
-            - name: Install Python dependencies
-              run: |
-                python -m pip install --upgrade pip
-                pip install -r requirements.txt
             - name: Build website
-              run: make
+              run: make prod
             - name: Sync website with the remote repository
               uses: ./.github/actions/sync-repository
               with:
-                local-path: build/
+                local-path: dist/
                 ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
                 ssh-known-hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
                 remote-path: ${{ secrets.REMOTE_SSH }}:/srv/toltec/web
