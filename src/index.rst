@@ -100,10 +100,19 @@ I found a vulnerability in Toltec or one of its packages, where can I report it?
     To inform the Toltec maintainers about a security issue, please follow the `security instructions <https://github.com/toltec-dev/organization/blob/main/docs/security.md>`_.
 
 Can I factory reset my reMarkable if I have toltec installed?
-    No, **DO NOT** factory reset your reMarkable if you have toltec installed. First uninstall toltec with `toltecctl uninstall`.
+    No, **DO NOT** factory reset your reMarkable if you have toltec installed. First uninstall toltec with ``toltecctl uninstall``.
 
 My reMarkable seems to have become unresponsive, how do I fix it?
-    If you can't SSH in through USB (using IP ``10.11.99.1``), there are tools that can help you recover your reMarkable if it becomes unresponsive:
+   If you can't SSH in through USB (using IP ``10.11.99.1``), there are tools that can help you recover your reMarkable if it becomes unresponsive:
 
-    * reMarkable 1: `uuuflash <https://github.com/ddvk/remarkable-uuuflash>`_
-    * reMarkable 2: `remarkable2-recovery <https://github.com/ddvk/remarkable2-recovery>`_.
+   * reMarkable 1: `uuuflash <https://github.com/ddvk/remarkable-uuuflash>`_
+   * reMarkable 2: `remarkable2-recovery <https://github.com/ddvk/remarkable2-recovery>`_.
+    
+   If you can SSH in through USB, the following may work:
+
+   .. parsed-literal::
+
+      rm /etc/systemd/system/xochitl.service.d/toltec-wrapper.conf
+      systemctl daemon-reload
+      systemctl reset-failed xochitl
+      systemctl restart xochitl
