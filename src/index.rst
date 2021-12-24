@@ -99,6 +99,9 @@ Can I add `__________` to Toltec?
 I found a vulnerability in Toltec or one of its packages, where can I report it?
     To inform the Toltec maintainers about a security issue, please follow the `security instructions <https://github.com/toltec-dev/organization/blob/main/docs/security.md>`_.
 
+Can I factory reset my reMarkable if I have toltec installed?
+    No, **DO NOT** factory reset your reMarkable if you have toltec installed. First uninstall toltec with `toltecctl uninstall`.
+
 My reMarkable seems to have become unresponsive, how do I fix it?
     If you can't SSH in through USB (using IP ``10.11.99.1``), there are tools that can help you recover your reMarkable if it becomes unresponsive:
 
