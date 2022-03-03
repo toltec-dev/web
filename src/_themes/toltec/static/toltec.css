@@ -10,7 +10,7 @@
     --font: "-apple-system", "BlinkMacSystemFont",
         "Helvetica Neue", "Roboto", sans-serif;
     --font-color: #222;
-    --font-color-dim: #777;
+    --font-color-dim: #666;
     --font-color-inv: #fcfaf8;
 
     /* Text sizes */
@@ -82,13 +82,16 @@ html {
     }
 }
 
+pre, code {
+    font-size: 0.888rem;
+}
+
 pre {
     padding: var(--text-height);
-    background-color: var(--bg-color-inv);
     overflow: auto;
     border-radius: var(--border-radius);
 
-    font-size: 0.888rem;
+    background-color: var(--bg-color-inv);
     color: var(--font-color-inv);
 }
 
@@ -246,18 +249,35 @@ main {
 .sidebar-nav ul ul {
     margin:
         0 0 var(--text-height)
-        calc(.5 * var(--text-height));
+        calc(1 * var(--text-height));
 }
 
-.sidebar-nav > ul > li > ul > li a::before {
-    content: "";
+.sidebar-nav li li a::before {
+    --width: calc(0.66 * var(--text-height));
+    margin-left: calc(-1 * var(--width));
+    width: var(--width);
+
+    content: "\25B6";
     display: inline-block;
 
+    font-size: 0.66rem;
     vertical-align: 10%;
-    border-top: 0.222rem solid transparent;
-    border-bottom: 0.222rem solid transparent;
-    margin-right: 0.444rem;
-    border-left: 0.444rem solid currentColor;
+}
+
+/* Match internal links, except links to the current page */
+.sidebar-nav a[href^="#"]:not([href$="#"]) {
+    color: var(--font-color-dim);
+}
+
+.sidebar-nav a[href^="#"]:not([href$="#"])::before {
+    content: "#";
+    font-size: 1rem;
+    vertical-align: 0%;
+}
+
+.sidebar-nav a.current {
+    font-weight: bold;
+    text-decoration-thickness: 0.1rem;
 }
 
 .sidebar-footer {
@@ -282,6 +302,14 @@ main > section:first-of-type > h1:first-of-type {
 
 .screenshot {
     border-radius: var(--border-radius);
+}
+
+figure {
+    margin: var(--page-spacing) 0;
+}
+
+figcaption {
+    font-style: italic;
 }
 
 /* Small screens */
