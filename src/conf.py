@@ -4,7 +4,7 @@ import sys
 sys.path.append(os.path.abspath("./_ext"))
 
 project = "Toltec"
-copyright = "2021, The Toltec Contributors"
+copyright = "2022, The Toltec Contributors"
 author = "The Toltec Contributors"
 
 html_theme_path = ["_themes"]
