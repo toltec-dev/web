@@ -23,4 +23,5 @@ jobs:
                 local-path: dist/
                 ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
                 ssh-known-hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+                ssh-port: ${{ secrets.SSH_PORT }}
                 remote-path: ${{ secrets.REMOTE_SSH }}:/srv/toltec/web
