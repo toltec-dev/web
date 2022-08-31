@@ -11,7 +11,11 @@ Toltec is a community-maintained repository of free software for the `reMarkable
 Install Toltec
 ==============
 
-**Warning:** *Toltec only supports OS builds up to and including OS 2.14.1.866. You will soft-brick your device if you install before support is released. See* `remarkable2-recovery <https://github.com/ddvk/remarkable2-recovery>`_ *for information on how to recover your device if you have done this.*
+.. raw:: html
+
+   <div class="warning">
+      ⚠️ <b>Warning:</b> <i>Toltec only supports OS builds up to and including OS 2.14.1.866. You will soft-brick your device if you install before support is released. See <a href="https://github.com/ddvk/remarkable2-recovery">remarkable2-recovery</a> for information on how to recover your device if you have done this.</a>
+   </div>
 
 To install `Toltec <https://github.com/toltec-dev/toltec>`_, connect your reMarkable to Wi-Fi and paste the following lines in an `SSH session <https://remarkablewiki.com/tech/ssh>`_:
 
