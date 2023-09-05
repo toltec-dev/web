@@ -96,6 +96,9 @@ Will this brick my reMarkable?
 Do you support reMarkable 2?
     Yes, Toltec will automatically detect whether you are using a reMarkable 1 or 2, and install the required framebuffer dependencies.
 
+Why doesn't toltec support the latest OS version as soon as it comes out?
+    Some of our packages require new versions to properly support a new OS release. For the reMarkable 2, the `display` needs to be updated so that any application that uses the screen will work. Without this being updated, you'll end up soft-bricking your device. Other packages like `ddvk-hacks` will just fail to install without having explicit support. Since this project is volunteer run, and we put things through a testing period before it can make it to stable, it can take a little while for us to catch up when new versions of the OS are being released.
+
 Can I add `__________` to Toltec?
     We’re always open to adding new packages to the repository.
     You’ll find information about how to add a package in our `contributing guide <https://github.com/toltec-dev/toltec/blob/stable/docs/contributing.md>`_.
