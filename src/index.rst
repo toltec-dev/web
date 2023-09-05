@@ -120,6 +120,8 @@ My reMarkable seems to have become unresponsive, how do I fix it?
    .. parsed-literal::
 
       rm /etc/systemd/system/xochitl.service.d/toltec-wrapper.conf
+      systemctl unmask sync.service || systemctl unmask rm-sync.service
+      systemctl disable --now manual-sync.service
       systemctl daemon-reload
       systemctl reset-failed xochitl
       systemctl restart xochitl
