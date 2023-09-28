@@ -14,7 +14,7 @@ Install Toltec
 .. raw:: html
 
    <div class="warning">
-      ⚠️ <b>Warning:</b> <i>Toltec does not support OS builds newer than 2.15.1.1189. You will soft-brick your device if you install before support is released. See <a href="https://remarkable.guide/tech/recovery.html">https://remarkable.guide/tech/recovery.html</a> for information on how to recover your device if you have done this.</a>
+      ⚠️ <b>Warning:</b> <i>Toltec does not support OS builds newer than 2.15.1.1189. You will soft-brick your device if you install before support is released. See <a href="https://remarkable.guide/tech/recovery.html">https://remarkable.guide/tech/recovery.html</a> for information on how to recover your device if you have done this.
    </div>
 
 To install `Toltec <https://github.com/toltec-dev/toltec>`_, connect your reMarkable to Wi-Fi and paste the following lines in an `SSH session <https://remarkablewiki.com/tech/ssh>`_:
@@ -108,6 +108,12 @@ I found a vulnerability in Toltec or one of its packages, where can I report it?
 
 Can I factory reset my reMarkable if I have toltec installed?
     No, **DO NOT** factory reset your reMarkable if you have toltec installed. First uninstall toltec with ``toltecctl uninstall``.
+
+Why can't I install toltec before my OS is supported?
+    `Can I install toltec before my OS version is supported? <https://remarkable.guide/faqs.html#can-i-install-toltec-before-my-os-version-is-supported>`_ on `remarkable.guide <https://remarkable.guide>`_ has a good write-up on why.
+
+Why doesn’t toltec support the beta OS versions?
+    `Why doesn’t toltec support the beta OS versions? <https://remarkable.guide/faqs.html#why-doesn-t-toltec-support-the-beta-os-versions>`_ on `remarkable.guide <https://remarkable.guide>`_ has a good write-up on why.
 
 My reMarkable seems to have become unresponsive, how do I fix it?
    If you can't SSH in through USB (using IP ``10.11.99.1``), there are tools that can help you recover your reMarkable if it becomes unresponsive:
