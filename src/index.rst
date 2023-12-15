@@ -14,7 +14,7 @@ Install Toltec
 .. raw:: html
 
    <div class="warning">
-      ⚠️ <b>Warning:</b> <i>Toltec only supports OS builds between 2.6.1.71 and 2.15.1.1189. You will soft-brick your device if you install before support is released. See <a href="https://remarkable.guide/tech/recovery.html">https://remarkable.guide/tech/recovery.html</a> for information on how to recover your device if you have done this.
+      ⚠️ <b>Warning:</b> <i>Toltec only supports OS builds between 2.6.1.71 and 2.15.1.1189. You will soft-brick your device if you install on an unsupported version. See <a href="https://remarkable.guide/tech/recovery.html">https://remarkable.guide/tech/recovery.html</a> for information on how to recover your device if you have done this.
    </div>
 
 To install `Toltec <https://github.com/toltec-dev/toltec>`_, connect your reMarkable to Wi-Fi and paste the following lines in an `SSH session <https://remarkablewiki.com/tech/ssh>`_:
