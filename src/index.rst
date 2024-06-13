@@ -19,7 +19,7 @@ Install Toltec
       For more information on the current status of 3.4 support, see <a href="https://github.com/toltec-dev/toltec/issues/859">toltec-dev/toltec#859</a>. For a detailed list of the supported OS versions, see the <a href="http://toltec-dev.org/stable/Compatibility">compatibility table</a>.
    </div>
 
-To install `Toltec <https://github.com/toltec-dev/toltec>`_, connect your reMarkable to Wi-Fi and paste the following lines in an `SSH session <https://remarkablewiki.com/tech/ssh>`_:
+To install `Toltec <https://github.com/toltec-dev/toltec>`_, connect your reMarkable to Wi-Fi and paste the following lines in an `SSH session <https://remarkable.guide/guide/access/ssh.html>`_:
 
 .. parsed-literal::
 
