@@ -14,7 +14,7 @@ templates_path = ["_templates"]
 html_title = "Toltec"
 html_theme = "toltec"
 master_doc = "sitemap"
-html_sidebars = { "**": ["nav.html", "sidefooter.html"] }
+html_sidebars = {"**": ["nav.html", "sidefooter.html"]}
 html_permalinks_icon = "#"
 
 extensions = [
