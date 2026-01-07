@@ -86,50 +86,77 @@ Frequently Asked Questions
 ==========================
 
 Where can I get help?
-    If you need help with Toltec or one of its packages, you can `start a discussion on GitHub <https://github.com/toltec-dev/toltec/discussions>`_ or `join the reMarkable community on Discord <https://discord.gg/ATqQGfu>`_.
-    Please do not open issues to ask for help, as they're used exclusively for `package requests <https://github.com/toltec-dev/toltec/blob/testing/docs/contributing.md#requesting-a-package>`_ and `bug reports <https://github.com/toltec-dev/toltec/blob/testing/docs/contributing.md#reporting-a-bug>`_.
+---------------------
+
+If you need help with Toltec or one of its packages, you can `start a discussion on GitHub <https://github.com/toltec-dev/toltec/discussions>`_ or `join the reMarkable community on Discord <https://discord.gg/ATqQGfu>`_.
+Please do not open issues to ask for help, as they're used exclusively for `package requests <https://github.com/toltec-dev/toltec/blob/testing/docs/contributing.md#requesting-a-package>`_ and `bug reports <https://github.com/toltec-dev/toltec/blob/testing/docs/contributing.md#reporting-a-bug>`_.
 
 Is this supported by reMarkable AS?
-    No, this is a community project.
+-----------------------------------
+
+No, this is a community project.
 
 Will this brick my reMarkable?
-    Probably not, but `standard disclaimers apply <https://github.com/toltec-dev/toltec/blob/stable/LICENSE>`_.
+------------------------------
+
+Probably not, but `standard disclaimers apply <https://github.com/toltec-dev/toltec/blob/stable/LICENSE>`_.
 
 Do you support reMarkable 2?
-    Yes, Toltec will automatically detect whether you are using a reMarkable 1 or 2, and install the required framebuffer dependencies.
+---------------------------------
+
+Yes, Toltec will automatically detect whether you are using a reMarkable 1 or 2, and install the required framebuffer dependencies.
+
+Do you support reMarkable Paper Pro or Move?
+--------------------------------------------
+
+Not at this time.
 
 Why doesn't toltec support the latest OS version as soon as it comes out?
-    Some of our packages require new versions to properly support a new OS release. For the reMarkable 2, the `display` needs to be updated so that any application that uses the screen will work. Without this being updated, you'll end up soft-bricking your device. Other packages like `ddvk-hacks` will just fail to install without having explicit support. Since this project is volunteer run, and we put things through a testing period before it can make it to stable, it can take a little while for us to catch up when new versions of the OS are being released.
+-------------------------------------------------------------------------
+
+Some of our packages require new versions to properly support a new OS release. For the reMarkable 2, the `display` needs to be updated so that any application that uses the screen will work. Without this being updated, you'll end up soft-bricking your device. Other packages like `ddvk-hacks` will just fail to install without having explicit support. Since this project is volunteer run, and we put things through a testing period before it can make it to stable, it can take a little while for us to catch up when new versions of the OS are being released.
 
 Can I add `__________` to Toltec?
-    We’re always open to adding new packages to the repository.
-    You’ll find information about how to add a package in our `contributing guide <https://github.com/toltec-dev/toltec/blob/stable/docs/contributing.md>`_.
+---------------------------------
+
+We’re always open to adding new packages to the repository.
+You’ll find information about how to add a package in our `contributing guide <https://github.com/toltec-dev/toltec/blob/stable/docs/contributing.md>`_.
 
 I found a vulnerability in Toltec or one of its packages, where can I report it?
-    To inform the Toltec maintainers about a security issue, please follow the `security instructions <https://github.com/toltec-dev/organization/blob/main/docs/security.md>`_.
+-------------------------------------------------------------------------------------
+
+To inform the Toltec maintainers about a security issue, please follow the `security instructions <https://github.com/toltec-dev/organization/blob/main/docs/security.md>`_.
 
 Can I factory reset my reMarkable if I have toltec installed?
-    No, **DO NOT** factory reset your reMarkable if you have toltec installed. First uninstall toltec with ``toltecctl uninstall``.
+-------------------------------------------------------------
+
+No, **DO NOT** factory reset your reMarkable if you have toltec installed. First uninstall toltec with ``toltecctl uninstall``. For more information please reference `the factory reset guide article on remarkable.guide <https://remarkable.guide/tech/factory-reset.html>`_.
 
 Why can't I install toltec before my OS is supported?
-    `Can I install toltec before my OS version is supported? <https://remarkable.guide/faqs.html#can-i-install-toltec-before-my-os-version-is-supported>`_ on `remarkable.guide <https://remarkable.guide>`_ has a good write-up on why.
+-----------------------------------------------------
+
+`Can I install toltec before my OS version is supported? <https://remarkable.guide/faqs.html#can-i-install-toltec-before-my-os-version-is-supported>`_ on `remarkable.guide <https://remarkable.guide>`_ has a good write-up on why.
 
 Why doesn’t toltec support the beta OS versions?
-    `Why doesn’t toltec support the beta OS versions? <https://remarkable.guide/faqs.html#why-doesn-t-toltec-support-the-beta-os-versions>`_ on `remarkable.guide <https://remarkable.guide>`_ has a good write-up on why.
+------------------------------------------------
+
+`Why doesn’t toltec support the beta OS versions? <https://remarkable.guide/faqs.html#why-doesn-t-toltec-support-the-beta-os-versions>`_ on `remarkable.guide <https://remarkable.guide>`_ has a good write-up on why.
 
 My reMarkable seems to have become unresponsive, how do I fix it?
-   If you can't SSH in through USB (using IP ``10.11.99.1``), there are tools that can help you recover your reMarkable if it becomes unresponsive:
+-----------------------------------------------------------------
 
-   * reMarkable 1: `uuuflash <https://github.com/ddvk/remarkable-uuuflash>`_
-   * reMarkable 2: `remarkable2-recovery <https://github.com/ddvk/remarkable2-recovery>`_.
-    
-   If you can SSH in through USB, the following may work:
+If you can't SSH in through USB (using IP ``10.11.99.1``), there are tools that can help you recover your reMarkable if it becomes unresponsive:
 
-   .. parsed-literal::
+* reMarkable 1: `uuuflash <https://github.com/ddvk/remarkable-uuuflash>`_
+* reMarkable 2: `remarkable2-recovery <https://github.com/ddvk/remarkable2-recovery>`_.
 
-      rm /etc/systemd/system/xochitl.service.d/toltec-wrapper.conf
-      systemctl unmask sync.service || systemctl unmask rm-sync.service
-      systemctl disable --now manual-sync.service
-      systemctl daemon-reload
-      systemctl reset-failed xochitl
-      systemctl restart xochitl
+If you can SSH in through USB, the following may work:
+
+.. parsed-literal::
+
+  rm /etc/systemd/system/xochitl.service.d/toltec-wrapper.conf
+  systemctl unmask sync.service || systemctl unmask rm-sync.service
+  systemctl disable --now manual-sync.service
+  systemctl daemon-reload
+  systemctl reset-failed xochitl
+  systemctl restart xochitl
